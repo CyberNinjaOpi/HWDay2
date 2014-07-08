@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h2>Question 0</h2>
+    <input type="text" id="name"  />
+    <button onclick="pushVal()">Value</button>
+    <button onclick="pushAlert()">Alert</button>
+
+    <input type="text" id="element" />
+    <button onclick="myVal">My Value</button>
+    
+    <div id="output"></div> 
+
+    <script>
+        var myArr = [];
+        var pushVal = function () {
+        myArr.push(document.getElementById("name").value);
+            
+
+        };
+        var pushAlert = function () {
+            alert(myArr);
+    
+        };
+
+        var myArr2 = [];
+        var myVal = function () {
+        myArr2.push(document.getElementById("element").value);
+            document.getElementById('output').innerHTML = myArr2;
+
+
+        };
+
+
+
+
+    </script>
+
+
+</body>
+</html>
